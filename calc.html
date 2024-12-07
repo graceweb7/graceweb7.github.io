@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Grace Wamaitha">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+   
+</head><body>
+    <!--Container for the calculator-->
+    <div id="calculator">  
+          
+        <!--Show user input as they key in-->
+        <input class="output" readonly> <br>
+        <!--Display the results of computation-->
+        <input id="result" class="output" readonly> 
+        <hr>      
+        
+        <!--A list of all the buttons required-->
+        <div id="keys">
+            <button onclick="appendToOutput('+')" class="operator" >+</button>
+            <button onclick="appendToOutput('7')">7</button>
+            <button onclick="appendToOutput('8')">8</button>
+            <button onclick="appendToOutput('9')">9</button>
+            <button onclick="appendToOutput('-')" class="operator">-</button>
+            <button onclick="appendToOutput('4')">4</button>
+            <button onclick="appendToOutput('5')">5</button>
+            <button onclick="appendToOutput('6')">6</button>
+            <button onclick="appendToOutput('*')" class="operator">*</button>
+            <button onclick="appendToOutput('1')">1</button>
+            <button onclick="appendToOutput('2')">2</button>
+            <button onclick="appendToOutput('3')">3</button>
+            <button onclick="appendToOutput('/')" class="operator">/</button>
+            <button onclick="appendToOutput('0')">0</button>
+            <button onclick="appendToOutput('.')">.</button>            
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="operator">C</button>                   
+        </div>
+    </div>
+    </div>
+    <!--JavaScript file associated with this calculator-->
+    <script src="calc.js" defer></script>  
+
+</body>
+</html>
